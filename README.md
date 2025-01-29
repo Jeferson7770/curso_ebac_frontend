@@ -1,4 +1,3 @@
-
 # curso_ebac_frontend
 
 ## A entrega desse exercício consiste em:
