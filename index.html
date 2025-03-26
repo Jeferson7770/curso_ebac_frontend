@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Lista de Tarefas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Lista de Tarefas</h1>
+        <button type="button" id="add-user">Adicionar Jogador</button>
+    </header>
+
+    <form id="task-form">
+        <h2>Adicionar Jogador e Tarefa</h2>
+        <p>Após adicionar um jogador, continue adicionando tarefas para ele usando o mesmo nome. Para novos jogadores, insira nomes diferentes.</p>
+        <input type="text" id="player-name" required placeholder="Nome do jogador">
+        <input type="text" id="task-name" required placeholder="Digite a tarefa">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="cancel-button">Cancelar</button>
+    </form>
+    
+    
+    <div id="game-area"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

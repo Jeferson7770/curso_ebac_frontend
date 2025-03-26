@@ -1,0 +1,112 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:  #1b1b3a;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    background: #2a2a5a;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+button {
+    margin: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    background: #1761c8;
+    color: white;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+button:hover {
+    transform: scale(1.05);
+    background: #2f7ae0;
+}
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background: #35357a;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+    color: white;
+    display: none;
+}
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background: #22224a;
+    color: white;
+}
+#game-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.player-box {
+    background: #5050b0;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    color: white;
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+.task-item {
+    background: #6a6ac0;
+    padding: 12px;
+    margin: 6px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.completed {
+    text-decoration: line-through;
+    background: #4caf50 !important;
+}
+.task-buttons {
+    display: flex;
+    gap: 8px;
+}
+.delete-task, .complete-task {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 1.2em;
+    color: white;
+}
+.delete-task {
+    color: #ff4d4d;
+}
+.complete-task {
+    color: #00ff00;
+}
+
+#task-form p {
+    background: rgba(0, 0, 0, 0.584);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    color: rgba(247, 247, 131, 0.933);
+    margin-bottom: 15px;
+    font-style: normal;
+}
