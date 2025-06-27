@@ -1,0 +1,14 @@
+// Fontes
+$fontPrincipal: Roboto, sans-serif;
+
+$corDeDestaque: #C0392B;
+$corPrincipal: #FDF2E9;
+$corSecundaria: #2C3E50;
+$corBotao: $corDeDestaque;
+$corBotaoHover: darken($corDeDestaque, 10%);
+
+
+
+// Breakpoints
+$mobile: 767px;
+$tablet: 1023px;

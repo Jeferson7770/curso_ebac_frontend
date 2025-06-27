@@ -1,0 +1,182 @@
+@use 'config/reset';
+@use 'config/variaveis';
+@use 'sass:math';
+
+body {
+  background-color: variaveis.$corPrincipal;
+}
+
+.branding a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background-color: variaveis.$corSecundaria;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  font-weight: bold;
+  margin-left: 24px;
+}
+
+.menu li a {
+  color: variaveis.$corPrincipal;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Lobster', cursive;
+  font-size: 36px;
+  color: variaveis.$corPrincipal;
+  font-weight: normal;
+}
+section {
+  padding: 56px 0;
+}
+
+
+
+// Hero
+
+.hero {
+  background-image: url('/imagens/topo.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 95vh;
+  padding: 60px 0;
+  color: variaveis.$corPrincipal;
+  text-align: center;
+  display: flex;
+  align-items: flex-end; 
+  justify-content: center;
+  position: relative;
+
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 16px 60px 16px; 
+
+    }
+  }
+
+
+@media screen and (max-width: 767px) {
+  .hero {
+    padding: 40px 0;
+    min-height: 70vh;
+
+    .hero-content {
+      padding-bottom: 40px;
+    }
+  }
+}
+
+//Produtos 
+
+#produto {
+  scroll-margin-top: 80px;
+}
+
+.products {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #d32f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.product-button:hover {
+  background-color: #b71c1c;
+}
+
+/* Títulos */
+section h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #d32f2f;
+  font-weight: normal;
+}
+
+.product-item h4 {
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+  margin: 16px 0 8px;
+  color: #d32f2f;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* Responsivo */
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+}
