@@ -8,10 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const botaoReiniciar = document.createElement('button');
     botaoReiniciar.textContent = "Reiniciar Bingo";
     botaoReiniciar.style.display = "none";
-    botaoReiniciar.type = "button"; // evita submit
+    botaoReiniciar.type = "button"; 
     botaoReiniciar.className = "btn btn-warning ms-2"; 
     
-    // Coloca o botão dentro do form, ao lado do botão "Sortear"
     const botaoSortear = form.querySelector('button[type="submit"]');
     botaoSortear.insertAdjacentElement("afterend", botaoReiniciar);
 
@@ -47,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         resultadoBox.style.display = 'block';
 
-        // Animação de roleta
         let intervalo = setInterval(() => {
             let numeroTemp = Math.floor(Math.random() * numeroMaximo) + 1;
             resultado.innerText = numeroTemp;
@@ -76,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 jogoFinalizado = true;
             }
 
-        }, 5000); // tempo da "roleta"
+        }, 5000); 
     });
 
     // Reinicia o bingo
